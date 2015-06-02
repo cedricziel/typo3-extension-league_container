@@ -1,8 +1,10 @@
 <?php
 $EM_CONF[$_EXTKEY] = array(
 	'title' => 'The PHP league - container',
-	'description' => '',
-	'category' => '',
+	'description' => 'League container',
+	'category' => 'misc',
+	'author' => 'Cedric Ziel',
+	'author_email' => 'cedric@cedric-ziel.com',
 	'state' => 'stable',
 	'uploadfolder' => 0,
 	'createDirs' => '',
@@ -10,9 +12,11 @@ $EM_CONF[$_EXTKEY] = array(
 	'version' => '1.3.2',
 	'constraints' => array(
 		'depends' => array(
-			'typo3' => '6.2.0-7.3.99',
+			'typo3' => '6.2.0-7.2.99',
+			'cms' => ''
 		),
 		'conflicts' => array(),
 		'suggests' => array(),
-	),
+	)
 );
+?>
