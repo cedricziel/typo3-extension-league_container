@@ -1,9 +1,9 @@
 {
     "name": "cedricziel/league-container",
     "type": "typo3-cms-extension",
-    "version": "1.3.2",
+    "version": "2.0.3",
     "require": {
-        "typo3/cms-core": "*"
+        "typo3/cms": "*"
     },
     "authors": [
         {

@@ -4,24 +4,56 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "3658137db8615954787cdf67d0d71b35",
+    "hash": "cf870d74e545c12d78e785708e0ca96a",
+    "content-hash": "b9b1e481dadb8b8d02faafc1afcdc19c",
     "packages": [
         {
-            "name": "league/container",
-            "version": "1.3.2",
+            "name": "container-interop/container-interop",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/thephpleague/container.git",
-                "reference": "7e6c17fe48f76f3b97aeca70dc29c3f3c7c88d15"
+                "url": "https://github.com/container-interop/container-interop.git",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/container/zipball/7e6c17fe48f76f3b97aeca70dc29c3f3c7c88d15",
-                "reference": "7e6c17fe48f76f3b97aeca70dc29c3f3c7c88d15",
+                "url": "https://api.github.com/repos/container-interop/container-interop/zipball/fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "reference": "fc08354828f8fd3245f77a66b9e23a6bca48297e",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Interop\\Container\\": "src/Interop/Container/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
+            "time": "2014-12-30 15:22:37"
+        },
+        {
+            "name": "league/container",
+            "version": "2.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/thephpleague/container.git",
+                "reference": "d4b5e0dde44aec50e4025c7249d668ea74b1ae44"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/thephpleague/container/zipball/d4b5e0dde44aec50e4025c7249d668ea74b1ae44",
+                "reference": "d4b5e0dde44aec50e4025c7249d668ea74b1ae44",
                 "shasum": ""
             },
             "require": {
+                "container-interop/container-interop": "^1.1",
                 "php": ">=5.4.0"
+            },
+            "provide": {
+                "container-interop/container-interop-implementation": "^1.1"
             },
             "replace": {
                 "orno/di": "~2.0"
@@ -32,8 +64,8 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.0-dev",
-                    "dev-1.x": "1.3-dev"
+                    "dev-master": "2.1-dev",
+                    "dev-1.x": "1.5-dev"
                 }
             },
             "autoload": {
@@ -49,7 +81,7 @@
                 {
                     "name": "Phil Bennett",
                     "email": "philipobenito@gmail.com",
-                    "homepage": "http://philipobenito.github.io",
+                    "homepage": "http://www.philipobenito.com",
                     "role": "Developer"
                 }
             ],
@@ -60,9 +92,11 @@
                 "dependency",
                 "di",
                 "injection",
-                "league"
+                "league",
+                "provider",
+                "service"
             ],
-            "time": "2015-04-05 17:14:48"
+            "time": "2015-09-07 10:16:18"
         }
     ],
     "packages-dev": [],
